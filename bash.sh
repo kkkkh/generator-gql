@@ -1,3 +1,4 @@
+yarn run build
 read -p 'commit：' commit
 git add .
 git commit -m "$commit"
