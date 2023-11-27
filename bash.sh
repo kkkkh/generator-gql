@@ -1,6 +1,6 @@
 read -p 'commit：' commit
 git add .
 git commit -m "$commit"
-nrm use npm
-lerna publish
-nrm use taobao
+npx nrm use npm
+npx lerna publish
+npx nrm use taobao
