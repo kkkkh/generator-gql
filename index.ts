@@ -19,3 +19,5 @@ readFile(options)
 	.catch(() => {
 		spinner.fail('gen error')
 	})
+
+	
