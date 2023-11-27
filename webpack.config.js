@@ -6,7 +6,7 @@ module.exports = {
         main:'./src/main.ts'
     },
     output: {
-        path: path.resolve(__dirname, './lib'),
+        path: path.resolve(__dirname, './packages/generator-gql/lib/'),
         library:{
             type:'commonjs',
         },
