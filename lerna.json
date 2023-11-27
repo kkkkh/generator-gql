@@ -3,6 +3,5 @@
   "useNx": true,
   "useWorkspaces": false,
   "version": "independent",
-  "packages": ["."
-  ]
+  "packages": ["."]
 }
