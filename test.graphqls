@@ -1,0 +1,19 @@
+extend type Query {
+    listDevSchTasks(appId: ID!, branchId: ID!, keyword: String, offset: Int!,limit: Int!): ListDevSchTasksResult
+}
+type ListDevSchTasksResult {
+    code: Int
+    msg: String
+    data: ListDevSchTasksDataResult
+}
+type ListDevSchTasksDataResult {
+    # 总数
+    total: Int
+    # 数据
+    data: [DevSchTaskVO]
+}
+
+type DevSchTaskVO {
+    taskId: ID!
+    taskName: String
+}
