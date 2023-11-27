@@ -42,5 +42,6 @@
 		"url": "https://github.com/kkkkh/generator-gql",
 		"directory": "graphql"
 	},
-	"homepage": "https://kkkkh.github.io/generator-gql"
+	"homepage": "https://kkkkh.github.io/generator-gql",
+	"gitHead": "fd53aacfcd4bb16fcfa664bc42239b73993b5991"
 }
