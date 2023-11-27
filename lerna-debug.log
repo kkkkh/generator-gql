@@ -1,10 +1,7 @@
-28 error Error: Command failed with exit code 1: git add -- packages/generator-gql/package.json
-28 error 下列路径根据您的一个 .gitignore 文件而被忽略：
-28 error packages/generator-gql
-28 error 提示：如果您确实要添加它们，使用 -f 参数。
-28 error 提示：运行下面的命令来关闭本消息
-28 error 提示："git config advice.addIgnoredFile false"
-28 error     at makeError (/Users/zhanghaotian/Desktop/generator-gql/node_modules/execa/lib/error.js:60:11)
-28 error     at handlePromise (/Users/zhanghaotian/Desktop/generator-gql/node_modules/execa/index.js:118:26)
-28 error     at processTicksAndRejections (node:internal/process/task_queues:96:5)
-28 error     at async Promise.all (index 0)
+36 error Error: Command failed with exit code 128: git tag generator-gql@2.0.3 -m generator-gql@2.0.3
+36 error fatal: 标签 'generator-gql@2.0.3' 已存在
+36 error     at makeError (/Users/zhanghaotian/Desktop/generator-gql/node_modules/execa/lib/error.js:60:11)
+36 error     at handlePromise (/Users/zhanghaotian/Desktop/generator-gql/node_modules/execa/index.js:118:26)
+36 error     at processTicksAndRejections (node:internal/process/task_queues:96:5)
+36 error     at async Promise.all (index 0)
+36 error     at async Promise.all (index 0)
