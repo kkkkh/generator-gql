@@ -1,6 +1,6 @@
 import fs from 'fs'
 import {prettierFormat} from '@/utils/format'
-import {completeCode, GenType, typeReg, getApiStrSingle} from '@/main'
+import {completeCode, GenType, typeReg, getApiStrSingle} from './main'
 import ora from 'ora'
 import {OptionValues} from 'commander'
 import path from 'path'

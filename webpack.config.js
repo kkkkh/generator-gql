@@ -12,9 +12,10 @@ module.exports = {
         },
         filename: '[name].js',
     },
+    // mode: 'production',
     mode: 'development',
     target: 'node',
-    externals:[nodeExternals()],
+    externals:[nodeExternals(),/^prettier/],
     externalsType: 'commonjs',
     externalsPresets: {
       node: true,
