@@ -8,9 +8,7 @@ yarn global add generator-gql
 gen-gql -f ./***.graphqls
 ```
 
-
 #### build
-
 ```bash
 # bin
 # build in folder ./lib
@@ -20,6 +18,7 @@ yarn run build-lib
 # build in folder ./dist
 yarn run build-github
 ```
+
 #### dev 
 #### npm test
 ```bash
@@ -35,5 +34,4 @@ npm unlink generator-gql -g
 yarn run dev-test
 # 使用打包lib/index.js测试
 yarn run lib-test
-
 ```
