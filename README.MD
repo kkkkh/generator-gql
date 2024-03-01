@@ -9,11 +9,16 @@ gen-gql -f ./***.graphqls
 ```
 
 
-#### dev build
+#### build
 
 ```bash
+# bin
 # build in folder ./lib
-yarn run build
+yarn run build-lib
+
+# view
+# build in folder ./dist
+yarn run build-github
 ```
 #### dev npm test 
 

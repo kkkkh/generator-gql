@@ -1,6 +1,6 @@
 import fs from 'fs'
 // import path from 'path'
-import {genTemplateFile} from './genFile'
+import {genTemplateFile} from './index'
 import ora from 'ora'
 import {OptionValues} from 'commander'
 

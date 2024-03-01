@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import {readFile} from './src/read'
+import {readFile} from './src/file/read'
 import {program} from 'commander'
 import ora from 'ora'
 const spinner = ora('gen start').start()

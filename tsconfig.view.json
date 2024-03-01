@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "esnext",
+		"useDefineForClassFields": true,
+		"moduleResolution": "node",
+		"strict": true,
+		"jsx": "preserve",
+		"sourceMap": true,
+		"resolveJsonModule": true,
+		"esModuleInterop": true,
+		"lib": ["esnext", "dom"],
+		"skipLibCheck": true,
+		"allowSyntheticDefaultImports": true,
+		"allowJs": true,
+		"types": ["@types/node"],
+		"paths": {
+			"@/*": ["./src/*"],
+		},
+		"importHelpers": true,
+		"outDir": "./dist",                                   /* Specify an output folder for all emitted files. */
+	},
+	"include": ["src/**/*.ts","src/**/*.d.ts","src/**/*.vue"],
+	"exclude": ["node_modules","src/file/*.ts"]
+}

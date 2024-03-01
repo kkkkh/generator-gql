@@ -50,6 +50,7 @@ const getApiParamsStr = (code: string) => {
 		paramsValue: '',
 	}
 	if (paramsRes) {
+		// "aaa:bbbb" -> $$$1 -> $aaa:bbbb
 		params.paramsVar = paramsRes[0].replace(/([a-zA-Z]+:)/g, '$$$1')
 		params.paramsValue = paramsRes[0].replace(/([a-zA-Z]+)(:\s*)(\[?[a-zA-Z]+!?\]?!?)(,?)/g, '$1$2$$$1$4')
 	}

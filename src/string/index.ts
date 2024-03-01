@@ -1,4 +1,4 @@
-import {completeCode, GenType, typeReg, getApiStrSingle, apiAlias} from './main'
+import {completeCode, GenType, typeReg, getApiStrSingle, apiAlias} from '@/main'
 import {prettierFormat} from '@/utils/format'
 export const genTemplateStr = (code: string, genType: GenType, apiAliasValue:string) => {
 	completeCode[genType] = code

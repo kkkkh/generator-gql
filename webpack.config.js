@@ -1,5 +1,7 @@
 const path = require('path');
 var nodeExternals = require('webpack-node-externals');
+const TerserWebpackPlugin = require('terser-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 module.exports = {
     entry: {
         index:'./index.ts',
@@ -12,8 +14,8 @@ module.exports = {
         },
         filename: '[name].js',
     },
-    // mode: 'production',
-    mode: 'development',
+    mode: 'production',
+    // mode: 'development',
     target: 'node',
     externals:[nodeExternals(),/^prettier/],
     externalsType: 'commonjs',
@@ -35,13 +37,24 @@ module.exports = {
         rules: [
             {
                 test: /\.tsx?$/i,
-                use:'ts-loader',
+                loader:'ts-loader',
                 // use: [{
                 //     loader: 'ts-loader'
                 // }],
+                options: {
+                    configFile: 'tsconfig.json', // 指定特定的 tsconfig 文件
+                },
                 exclude: /node_modules/
             }
         ]
     },
-    plugins: []
+    plugins: [
+        new CleanWebpackPlugin(),
+    ],
+    optimization: {
+        minimize: true,
+        minimizer: [new TerserWebpackPlugin()],
+        usedExports:true,
+        sideEffects: true,
+      },
 }
