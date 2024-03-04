@@ -67,7 +67,7 @@
 <script lang="ts" setup>
 import { reactive, ref } from 'vue'
 import { UploadFilled } from '@element-plus/icons-vue'
-import { genTemplateStr } from "@/string/index"
+import { genTemplateStr } from "../string/index"
 
 const fileApiAlias = ref('result')
 const varApiAlias = ref('result')
