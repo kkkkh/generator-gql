@@ -16,6 +16,7 @@
 		"types": ["@types/node"],
 		"paths": {
 			"@/*": ["./src/*"],
+			"generator-gql/*": ["./*"]
 		},
 		"importHelpers": true,
 		"outDir": "./dist",                                   /* Specify an output folder for all emitted files. */

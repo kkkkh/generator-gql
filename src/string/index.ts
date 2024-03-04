@@ -1,5 +1,5 @@
-import {completeCode, GenType, typeReg, getApiStrSingle, apiAlias} from '@/main'
-import {prettierFormat} from '@/utils/format'
+import {completeCode, GenType, typeReg, getApiStrSingle, apiAlias} from 'generator-gql/src/main'
+import {prettierFormat} from 'generator-gql/src/utils/format'
 export const genTemplateStr = (code: string, genType: GenType, apiAliasValue:string) => {
 	completeCode[genType] = code
 	apiAlias.value = apiAliasValue

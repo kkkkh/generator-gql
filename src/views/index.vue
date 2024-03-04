@@ -67,8 +67,10 @@
 <script lang="ts" setup>
 import { reactive, ref } from 'vue'
 import { UploadFilled } from '@element-plus/icons-vue'
-import { genTemplateStr } from "../string/index"
+import { genTemplateStr } from "generator-gql/src/string"
 
+
+const emits = defineEmits(['save'])
 const fileApiAlias = ref('result')
 const varApiAlias = ref('result')
 const active = ref("0")
@@ -115,6 +117,11 @@ const genVarCodeValue = () => {
     genElForm.value.validateField('varCode', (isValid: string) => {
         if (isValid) {
             form.varCodeValue = genTemplateStr(form.varCode, "varCode", varApiAlias.value)
+            emits("save",{
+                classify:'api',
+                content:form.varCode,
+                result:form.varCodeValue,
+            })
         }
     })
 }
@@ -124,6 +131,11 @@ const genFieldCodeValue = () => {
         if (isValid) {
             const code = form.fieldCode;
             form.fieldCodeValue = getFildStr(code)
+            emits("save",{
+                classify:'type',
+                content:form.fieldCode,
+                result:form.fieldCodeValue,
+            })
         }
     })
 }
@@ -148,5 +160,10 @@ const genFileCodeValue = () => {
     //     })
     // })
     form.fileCode = genTemplateStr(contentStr.value, 'varCode', fileApiAlias.value)
+    emits("save",{
+        classify:'file',
+        content:contentStr.value,
+        result:form.fileCode,
+    })
 }
 </script>

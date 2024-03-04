@@ -30,7 +30,8 @@ module.exports = {
     resolve: {
         extensions: ['.ts','.js'],
         alias: {
-            "@": path.resolve(__dirname, './src/'),
+            "@": path.resolve(__dirname, './src'),
+            "generator-gql": path.resolve(__dirname, './src'),
         },
     },
     module: {
