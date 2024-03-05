@@ -5,11 +5,11 @@ const path = require('path');
       const HtmlWebpackPlugin = require('html-webpack-plugin')
       module.exports = {
         entry: {
-          main:'./src/views/index.js'
+          main:'./src/views/main.js'
         },
         output: {
           path: path.resolve(__dirname, 'docs'),
-          filename: 'index.js', 
+          filename: 'main.js', 
         },
         target: 'web',
         mode: 'production',
@@ -67,7 +67,7 @@ const path = require('path');
         resolve: {
           extensions: ['.js', '.ts', '.vue'],
           alias: {
-            '@': path.resolve(__dirname,'src'), 
+            '@': path.resolve(__dirname,'./src'), 
             "generator-gql": path.resolve(__dirname, './'),
           },
         },

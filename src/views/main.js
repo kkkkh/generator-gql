@@ -4,6 +4,7 @@ import ElementPlus from 'element-plus'
 
 
 const app = createApp(App)
+
 export default app
 
 if (typeof window !== 'undefined') {

@@ -19,8 +19,8 @@
 			"generator-gql/*": ["./*"]
 		},
 		"importHelpers": true,
-		"outDir": "./dist",                                   /* Specify an output folder for all emitted files. */
+		"outDir": "./docs",                                   /* Specify an output folder for all emitted files. */
 	},
 	"include": ["src/**/*.ts","src/**/*.d.ts","src/**/*.vue"],
-	"exclude": ["node_modules","src/file/*.ts"]
+	"exclude": ["node_modules","src/file/*.ts","src/views/index.ts"]
 }
