@@ -68,7 +68,7 @@ const path = require('path');
           extensions: ['.js', '.ts', '.vue'],
           alias: {
             '@': path.resolve(__dirname,'src'), 
-            "generator-gql": path.resolve(__dirname, './src'),
+            "generator-gql": path.resolve(__dirname, './'),
           },
         },
         optimization: {
